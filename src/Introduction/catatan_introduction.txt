@@ -1,0 +1,25 @@
+A) Definisi
+  : Emotion ialah library untuk menuliskan style css dengan javascript. Ia memberikan 
+  style komposisi yang powerful dan predictable. Ia juga memberikan pengalaman
+  pengembangan yang hebat dengan fitur seperti source maps, label, dan testing utilities.
+
+B) Instalasi
+  : npm i @emotion/react  @emotion/styled
+
+C) Cara styling
+  C.1) Css Prop
+  : Tidak didukung oleh react typescript.
+
+  C.2) Styled
+    C.2.1) Syntax
+    : cosnt <nama component> = styled.<nama element>
+      `
+        ...style
+      `
+    C.2.2) Contoh
+    : const Button = styled.button
+      `
+        padding: 32px;
+        background-color: blue;
+      `
+

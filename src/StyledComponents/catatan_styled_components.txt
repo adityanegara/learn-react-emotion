@@ -1,0 +1,52 @@
+A) Definisi
+: styled ialah cara untuk membuat react component yang memiliki style tertempel pada mereka.
+Ia ada dari package @emotion/styled. 
+
+B) Mengubah style berdasarkan props
+: Anda harus menuliskan type dari props terlebih dahulu.
+    B.1) Syntax dengan string
+    : interface <nama interface>{
+        ...type
+        }
+
+    const <nama component> = styled.<html element><interface>`
+        <nama css property>: ${(props) => (props.<nama props> ? <value> : <value>)};
+        ...
+    `;
+
+    B.2) Contoh dengan string
+    : Contoh ada pada file ChangingBasedOnProps pada const Button.
+
+    B.3) Syntax dengan function
+    : interface <nama interface>{
+        ...type
+      }
+
+       const <nama component> = styled("<html element>")<interface>(
+        {
+            //css property tanpa props
+        },
+        (props) => ({
+            //css property dengan props
+            <nama css property>: props.<nama props> ? <value> : <value>,
+            })
+        );
+
+    B.4) Contoh ada pada file ChangingBasedOnProps pada const Container.
+
+C) Menduplikasi style
+    C.1) Syntax
+    : const <nama component> = <nama component yang ingin di duplikasi>.withComponent('<html tag>');
+
+    C.2) Contoh
+    : const Aside = Section.withComponent('aside');
+
+D) Mentarget Emotion lain
+    D.1) Import dengan babel macro
+    : import styled from '@emotion/styled/macro'
+
+    D.2) Syntax
+    :   const <nama component> = styled.<html element>`
+        ${<nama emotion component>} {
+            //css property
+        }
