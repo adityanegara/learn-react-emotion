@@ -16,11 +16,14 @@ import NestedInAnotherElement from "./NestedSelector/NestedInAnotherElement";
 import MediaQueries from "./MediaQueries/MediaQueries";
 import ReusableMediaQueries from "./MediaQueries/ReusableMediaQueries";
 import GlobalStyles from "./GlobalStyles/GlobalStyles";
+import ParentCSSPropsTheming from "./Theming/CSSPropTheming/Parent";
+import ParentStyledTheming from "./Theming/StyledTheming/Parent";
+import ParentUseThemeHook from "./Theming/useThemeHook/Parent";
 
 const App = () =>{
   return(
     <div>
-      <GlobalStyles/>
+      <ParentUseThemeHook/>
     </div>
   )
 }
