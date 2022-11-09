@@ -11,11 +11,16 @@ import StyledObjectStyles from "./ObjectStyles/StyledObjectStyles";
 import ChildSelectorsObjectStyles from "./ObjectStyles/ChildSelectorsObjectStyles";
 import MediaQueriesObjectStyles from "./ObjectStyles/MediaQueriesObjectStyles";
 import FallbackObjectStyles from "./ObjectStyles/FallbacksObjectStyles";
+import Nested from "./NestedSelector/Nested";
+import NestedInAnotherElement from "./NestedSelector/NestedInAnotherElement";
+import MediaQueries from "./MediaQueries/MediaQueries";
+import ReusableMediaQueries from "./MediaQueries/ReusableMediaQueries";
+import GlobalStyles from "./GlobalStyles/GlobalStyles";
 
 const App = () =>{
   return(
     <div>
-      <FallbackObjectStyles/>
+      <GlobalStyles/>
     </div>
   )
 }

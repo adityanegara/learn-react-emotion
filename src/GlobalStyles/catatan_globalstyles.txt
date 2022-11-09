@@ -1,0 +1,4 @@
+A) Latar Belakang
+: Terkadang anda ingin untuk memasukan global css seperti resets atau font.
+Anda dapat menggunakan component 'Global' untuk melakukannya. Komponen
+ini menerima prop 'styles' yang bisa dimasukan css prop. 
