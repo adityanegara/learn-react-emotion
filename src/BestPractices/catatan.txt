@@ -1,0 +1,40 @@
+A) Gunakan typescript dan object styles
+: Anda tidak mendapatkan rekomendasi intellisense dan type checking ketika
+menggunakan CSS Strings. Dengan menggunakan object styles dan typescript
+maka akan ada rekomendasi intellisense dan type checking.
+
+B) Satukan styles dengan komponen
+: Dengan normal CS biasanya styles dari komponen didefinisikan di file yang berbeda.
+Ini membuat maintenance lebih sulit karena akan lebih susah mengetahui
+komponen mana yang menggunakan CSS tersebut, dan akan peluang lupa mengupdate
+CSS relevant semakin besar.
+
+C) Pertimbangkan bagaimana anda membagikan styles
+    1) Mengexport CSS object
+    2) Dibagikan melalui komponen
+
+D) gunakan 'stype' prop untuk style yang dinamik.
+  D.1) Syntax CSS
+  : .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-style: var(--background-style);
+  }
+
+  D.2) Penggunaan
+  : <div className="avatar" style={{ '--background-style': imageUrl }} />
+
+E) Jika menggunakan react, gunakan '@emotion/react' atau '@emotion/styled'
+daripada '@emotion/css'
+
+F) Gunakan css prop atau styled component. tetapi tidak keduanya.
+
+G) Definisikan styles diluar block component
+
+H) Definisikan colors dan constant lainnya pada variable javascript.
+
+I) Jangan gunakan theme kecuali aplikasi anda memiliki tema yang lebih dari 1.
+: Jika aplikasi anda memiliki tema lebih dari satu seperti tema terang dan gelap. 
+Akan lebih mudah menggunakan theme. Jika tidak maka akan lebih sederhana
+mendefinisikan warna dan constant lainnya menggunakan Javascript Constant.
