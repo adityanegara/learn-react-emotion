@@ -8,7 +8,23 @@ B) Instalasi
 
 C) Cara styling
   C.1) Css Prop
-  : Tidak didukung oleh react typescript.
+    C.2.1) Import
+    : /** @jsxRuntime classic */
+      /** @jsx jsx */
+      import { jsx } from "@emotion/react";
+      import { css } from "@emotion/react/macro";
+
+    C.2.2) Syntax
+    : css
+      `
+        <nama property>: <value>     
+      `
+    
+    C.2.3) Contoh
+    : css
+      `
+        backgroundColor: red;
+      `
 
   C.2) Styled
     C.2.1) Syntax

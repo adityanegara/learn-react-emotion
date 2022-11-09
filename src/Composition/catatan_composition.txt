@@ -1,0 +1,8 @@
+A) Permasalahan
+: Dengan CSS biasa kita kadang sering bingung style mana
+yang akan tampil bila memasukan dua class sekaligus. Hal ini
+sering diselesaikan dengan menggunakan '!important' pada cssnya.
+
+B) Solusi
+: Dengan menggunakan composition dari react emotion. Style yang
+berkomposisi akan ditumpuk stylenya sehingga lebih mudah diprediksi

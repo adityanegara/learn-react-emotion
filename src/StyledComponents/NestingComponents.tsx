@@ -8,10 +8,18 @@ const NestingComponent = () =>{
       color: hotpink;
     }
   `
+
+  const ExampleWithObjectStyles = styled('span')({
+    color: 'green',
+    '& > strong': {
+      color: 'hotpink'
+    }
+  })
+
     return(
-        <Example>
+        <ExampleWithObjectStyles>
         This is <strong>nested</strong>.
-      </Example>
+      </ExampleWithObjectStyles>
     )
 }
 
